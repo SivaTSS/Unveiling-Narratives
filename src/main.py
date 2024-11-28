@@ -30,19 +30,23 @@ def split_into_sentences(text):
 def extract_mentions(sentences, characters):
     character_contexts = defaultdict(list)
     characters_lower = [char.lower() for char in characters]
-    for sentence in sentences:
+    for idx, sentence in enumerate(sentences):
         sentence_lower = sentence.lower()
         for char, char_lower in zip(characters, characters_lower):
             pattern = r'\b' + re.escape(char_lower) + r'\b'
             if re.search(pattern, sentence_lower):
-                character_contexts[char].append(sentence.strip())
+                # Include previous 2 and next 2 sentences
+                start_idx = max(0, idx - 2)
+                end_idx = min(len(sentences), idx + 3)
+                context = ' '.join(sentences[start_idx:end_idx]).strip()
+                character_contexts[char].append(context)
     return character_contexts
 
 def count_character_mentions(character_contexts):
     character_counts = {char: len(contexts) for char, contexts in character_contexts.items()}
     return character_counts
 
-def select_top_characters(character_counts, top_n=25):
+def select_top_characters(character_counts, top_n=50):
     sorted_characters = sorted(character_counts.items(), key=lambda x: x[1], reverse=True)
     top_characters = [char for char, count in sorted_characters[:top_n]]
     print(f"Top {top_n} characters selected.")
@@ -60,15 +64,41 @@ def classify_roles_hierarchical(aggregated_contexts, hierarchical_roles, classif
     character_roles = {}
     main_roles = list(hierarchical_roles.keys())
     for char, context in aggregated_contexts.items():
-        context = context[:max_length]
+        # Enhanced prompt to focus on character-specific role classification
+        context_with_name = f"Based on the following text, classify the main role of the character {char} in the story:\n\n{context}"
+        context_with_name = context_with_name[:max_length]
         try:
-            main_result = classifier(context, main_roles, multi_label=False)
+            # Correctly escape the curly braces in hypothesis_template
+            hypothesis_template = f"The role of {char} is {{}}."
+            main_result = classifier(
+                context_with_name,
+                main_roles,
+                multi_label=False,
+                hypothesis_template=hypothesis_template
+            )
+            # Debug: Print classifier output
+            print(f"Role classification result for {char}: {main_result}")
+            
+            if 'labels' not in main_result or not main_result['labels']:
+                raise ValueError("No labels returned by classifier.")
+
             top_main_role = main_result['labels'][0]
             sub_roles = hierarchical_roles.get(top_main_role, {})
             if sub_roles:
                 sub_role_labels = list(sub_roles.keys())
-                sub_result = classifier(context, sub_role_labels, multi_label=False)
-                top_sub_role = sub_result['labels'][0] if sub_result['labels'] else "Unknown"
+                sub_result = classifier(
+                    context_with_name,
+                    sub_role_labels,
+                    multi_label=False,
+                    hypothesis_template=hypothesis_template
+                )
+                # Debug: Print sub-role classifier output
+                print(f"Sub-role classification result for {char}: {sub_result}")
+                
+                if 'labels' not in sub_result or not sub_result['labels']:
+                    top_sub_role = "Unknown"
+                else:
+                    top_sub_role = sub_result['labels'][0]
             else:
                 top_sub_role = "Unknown"
             character_roles[char] = {
@@ -83,22 +113,36 @@ def classify_roles_hierarchical(aggregated_contexts, hierarchical_roles, classif
             }
     return character_roles
 
-def classify_traits(aggregated_contexts, traits, classifier, max_length=1024, top_k=4):
+def classify_traits(aggregated_contexts, traits, classifier, max_length=1024, confidence_threshold=0.3, max_traits=4):
     character_traits = {}
     for char, context in aggregated_contexts.items():
-        context = context[:max_length]
+        # Enhanced prompt to focus on character-specific trait classification
+        context_with_name = f"Based on the following text, identify the traits of the character {char}:\n\n{context}"
+        context_with_name = context_with_name[:max_length]
         character_traits[char] = {}
         for trait_category, trait_dict in traits.items():
             trait_labels = list(trait_dict.keys())
             try:
-                trait_result = classifier(context, trait_labels, multi_label=True)
-                # Select top_k traits based on scores
-                sorted_traits = sorted(
-                    zip(trait_result['labels'], trait_result['scores']),
-                    key=lambda x: x[1],
-                    reverse=True
+                # Correctly escape the curly braces in hypothesis_template
+                hypothesis_template = f"The character {char} is {{}}."
+                trait_result = classifier(
+                    context_with_name,
+                    trait_labels,
+                    multi_label=True,
+                    hypothesis_template=hypothesis_template
                 )
-                selected_traits = [label for label, score in sorted_traits[:top_k]]
+                # Debug: Print trait classifier output
+                print(f"Trait classification result for {char} in category '{trait_category}': {trait_result}")
+                
+                if 'labels' not in trait_result or not trait_result['labels']:
+                    raise ValueError("No labels returned by classifier.")
+                
+                # Combine labels and scores
+                traits_scores = list(zip(trait_result['labels'], trait_result['scores']))
+                # Sort traits by score in descending order
+                sorted_traits = sorted(traits_scores, key=lambda x: x[1], reverse=True)
+                # Select up to max_traits traits that meet the confidence threshold
+                selected_traits = [label for label, score in sorted_traits if score >= confidence_threshold][:max_traits]
                 if not selected_traits:
                     selected_traits.append("None")
                 character_traits[char][trait_category] = selected_traits
@@ -234,6 +278,13 @@ def main():
 
     with open(args.traits_config, 'r', encoding='utf-8') as file:
         traits = yaml.safe_load(file)
+
+    # Ensure that both 'Protagonist' and 'Antagonist' are in the main roles
+    required_roles = ['Protagonist', 'Antagonist']
+    for role in required_roles:
+        if role not in hierarchical_roles:
+            print(f"Warning: '{role}' not found in roles configuration. Adding it with no sub-roles.")
+            hierarchical_roles[role] = {}
 
     process_book(args.book_path, args.character_path, args.output_path, hierarchical_roles, traits)
 
