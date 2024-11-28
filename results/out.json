@@ -1,0 +1,1102 @@
+{
+    "Tuppence": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Generous",
+                "Principled",
+                "Honest",
+                "Compassionate"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Friendly",
+                "Kind",
+                "Brave"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Moody"
+            ],
+            "Social": [
+                "Extroverted",
+                "Manipulative",
+                "Outgoing",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Ambitious",
+                "Driven",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Aggressive",
+                "Cautious",
+                "Strategic"
+            ]
+        }
+    },
+    "Tommy": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Generous",
+                "Principled",
+                "Honest",
+                "Compassionate"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Friendly",
+                "Kind",
+                "Brave"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Moody"
+            ],
+            "Social": [
+                "Extroverted",
+                "Manipulative",
+                "Outgoing",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Ambitious",
+                "Driven",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Aggressive",
+                "Cautious",
+                "Strategic"
+            ]
+        }
+    },
+    "Julius": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Honest",
+                "Compassionate"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Kind",
+                "Brave",
+                "Friendly"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Moody",
+                "Stoic",
+                "Angry"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Supportive",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Ambitious",
+                "Passionate",
+                "Driven",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Strategic",
+                "Aggressive",
+                "Cautious"
+            ]
+        }
+    },
+    "James": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Honest",
+                "Just"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Brave",
+                "Kind",
+                "Arrogant"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Extroverted",
+                "Manipulative",
+                "Supportive",
+                "Reserved"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Ambitious",
+                "Driven",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Aggressive",
+                "Cautious"
+            ]
+        }
+    },
+    "Vandemeyer": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Opportunistic",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Kind",
+                "Friendly",
+                "Charismatic"
+            ],
+            "Emotional": [
+                "Joyful",
+                "Stoic",
+                "Calm",
+                "Moody"
+            ],
+            "Social": [
+                "Extroverted",
+                "Manipulative",
+                "Reserved",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Indifferent",
+                "Passionate",
+                "Ambitious",
+                "Driven"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Passive",
+                "Cautious"
+            ]
+        }
+    },
+    "Jane": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Honest",
+                "Generous",
+                "Principled",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Brave",
+                "Charismatic",
+                "Intelligent",
+                "Hostile"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Sad",
+                "Moody",
+                "Stoic"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Aggressive",
+                "Assertive",
+                "Reckless",
+                "Cautious"
+            ]
+        }
+    },
+    "Brown": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Honest",
+                "Corrupt"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Pessimistic",
+                "Kind"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Extroverted",
+                "Manipulative",
+                "Introverted",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Driven",
+                "Passionate",
+                "Ambitious",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Aggressive",
+                "Cautious",
+                "Assertive"
+            ]
+        }
+    },
+    "CARTER": {
+        "Roles": {
+            "Main Role": "Symbolic Character",
+            "Sub Role": "Personification"
+        },
+        "Traits": {
+            "Moral": [
+                "Honest",
+                "Principled",
+                "Generous",
+                "Just"
+            ],
+            "Personality": [
+                "Kind",
+                "Intelligent",
+                "Charismatic",
+                "Friendly"
+            ],
+            "Emotional": [
+                "Calm",
+                "Joyful",
+                "Stoic",
+                "Moody"
+            ],
+            "Social": [
+                "Supportive",
+                "Extroverted",
+                "Manipulative",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Cautious",
+                "Passive"
+            ]
+        }
+    },
+    "Whittington": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Opportunistic",
+                "Dishonest",
+                "Principled",
+                "Just"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Pessimistic",
+                "Foolish"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Sad",
+                "Angry"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Cautious",
+                "Passive",
+                "Aggressive",
+                "Strategic"
+            ]
+        }
+    },
+    "Finn": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Honest",
+                "Generous",
+                "Principled",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Brave",
+                "Charismatic",
+                "Intelligent",
+                "Hostile"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Sad",
+                "Moody",
+                "Stoic"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Aggressive",
+                "Assertive",
+                "Reckless",
+                "Cautious"
+            ]
+        }
+    },
+    "Hersheimmer": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Just",
+                "Principled",
+                "Generous",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Brave",
+                "Charismatic",
+                "Kind"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Moody",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Ambitious",
+                "Passionate",
+                "Driven",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Aggressive",
+                "Passive"
+            ]
+        }
+    },
+    "Jane Finn": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Honest",
+                "Generous",
+                "Principled",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Brave",
+                "Charismatic",
+                "Intelligent",
+                "Hostile"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Sad",
+                "Moody",
+                "Stoic"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Aggressive",
+                "Assertive",
+                "Reckless",
+                "Cautious"
+            ]
+        }
+    },
+    "OWN": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Advisor"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Just",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Arrogant",
+                "Pessimistic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Calm"
+            ],
+            "Social": [
+                "Manipulative",
+                "Supportive",
+                "Extroverted",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Passive",
+                "Assertive",
+                "Aggressive"
+            ]
+        }
+    },
+    "Albert": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Opportunistic",
+                "Generous",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Kind",
+                "Brave"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Supportive",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Ambitious",
+                "Driven",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Aggressive",
+                "Assertive",
+                "Passive"
+            ]
+        }
+    },
+    "Conrad": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Honest",
+                "Principled",
+                "Generous",
+                "Just"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Kind",
+                "Brave",
+                "Charismatic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Manipulative",
+                "Supportive",
+                "Extroverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Driven",
+                "Passionate",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Aggressive",
+                "Cautious"
+            ]
+        }
+    },
+    "Beresford": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Generous",
+                "Compassionate",
+                "Principled",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Kind",
+                "Friendly",
+                "Charismatic"
+            ],
+            "Emotional": [
+                "Stoic",
+                "Joyful",
+                "Calm",
+                "Anxious"
+            ],
+            "Social": [
+                "Supportive",
+                "Manipulative",
+                "Extroverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Passive",
+                "Strategic",
+                "Aggressive"
+            ]
+        }
+    },
+    "Boris": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Protector"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Honest",
+                "Compassionate"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Friendly",
+                "Kind",
+                "Brave"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Calm",
+                "Stoic",
+                "Joyful"
+            ],
+            "Social": [
+                "Extroverted",
+                "Supportive",
+                "Manipulative",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Passive",
+                "Assertive",
+                "Cautious"
+            ]
+        }
+    },
+    "Annette": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Dishonest",
+                "Opportunistic",
+                "Greedy",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Arrogant",
+                "Pessimistic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Sad",
+                "Angry",
+                "Stoic"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Outgoing"
+            ],
+            "Motivation": [
+                "Ambitious",
+                "Driven",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Strategic",
+                "Passive",
+                "Aggressive"
+            ]
+        }
+    },
+    "Hall": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Compassionate",
+                "Principled",
+                "Generous",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Arrogant",
+                "Charismatic",
+                "Kind"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Joyful"
+            ],
+            "Social": [
+                "Supportive",
+                "Manipulative",
+                "Extroverted",
+                "Reserved"
+            ],
+            "Motivation": [
+                "Driven",
+                "Passionate",
+                "Ambitious",
+                "Apathetic"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Strategic",
+                "Passive",
+                "Cautious"
+            ]
+        }
+    },
+    "PEEL": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Dishonest",
+                "Generous",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Arrogant",
+                "Pessimistic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Moody"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Outgoing",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Aggressive",
+                "Strategic",
+                "Passive"
+            ]
+        }
+    },
+    "Kramenin": {
+        "Roles": {
+            "Main Role": "Symbolic Character",
+            "Sub Role": "Personification"
+        },
+        "Traits": {
+            "Moral": [
+                "Opportunistic",
+                "Just",
+                "Cruel",
+                "Dishonest"
+            ],
+            "Personality": [
+                "Hostile",
+                "Intelligent",
+                "Arrogant",
+                "Pessimistic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Joyful",
+                "Stoic"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Passionate",
+                "Driven",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Aggressive",
+                "Strategic",
+                "Assertive",
+                "Passive"
+            ]
+        }
+    },
+    "Peel Edgerton": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Dishonest",
+                "Generous",
+                "Opportunistic"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Arrogant",
+                "Pessimistic"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Stoic",
+                "Moody"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Outgoing",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Assertive",
+                "Aggressive",
+                "Strategic",
+                "Passive"
+            ]
+        }
+    },
+    "Rita": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Just",
+                "Opportunistic",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Hostile",
+                "Pessimistic",
+                "Arrogant"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Calm"
+            ],
+            "Social": [
+                "Manipulative",
+                "Supportive",
+                "Extroverted",
+                "Introverted"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious",
+                "Passionate",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Aggressive",
+                "Passive"
+            ]
+        }
+    },
+    "Cowley": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "Principled",
+                "Generous",
+                "Just",
+                "Honest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Kind",
+                "Hostile",
+                "Arrogant"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Stoic",
+                "Angry",
+                "Joyful"
+            ],
+            "Social": [
+                "Extroverted",
+                "Outgoing",
+                "Manipulative",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Ambitious",
+                "Driven",
+                "Passionate",
+                "Indifferent"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Assertive",
+                "Cautious",
+                "Aggressive"
+            ]
+        }
+    },
+    "Danvers": {
+        "Roles": {
+            "Main Role": "Supporting Character",
+            "Sub Role": "Confidant"
+        },
+        "Traits": {
+            "Moral": [
+                "Corrupt",
+                "Principled",
+                "Honest",
+                "Dishonest"
+            ],
+            "Personality": [
+                "Intelligent",
+                "Charismatic",
+                "Hostile",
+                "Kind"
+            ],
+            "Emotional": [
+                "Anxious",
+                "Angry",
+                "Joyful",
+                "Sad"
+            ],
+            "Social": [
+                "Manipulative",
+                "Extroverted",
+                "Introverted",
+                "Supportive"
+            ],
+            "Motivation": [
+                "Driven",
+                "Passionate",
+                "Ambitious",
+                "Lazy"
+            ],
+            "Behavior": [
+                "Strategic",
+                "Aggressive",
+                "Cautious",
+                "Assertive"
+            ]
+        }
+    }
+}
