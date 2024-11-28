@@ -6,3 +6,6 @@ wordcloud
 tqdm
 textblob
 spacy
+
+transformers
+torch
