@@ -2,6 +2,7 @@ import os
 import json
 import re
 import argparse
+import torch  # Import torch first to prioritize PyTorch
 from transformers import pipeline
 from tqdm import tqdm
 from collections import defaultdict
@@ -31,14 +32,11 @@ def extract_mentions(chunks, characters):
             pattern = r'\b' + re.escape(char_lower) + r'\b'
             matches = re.finditer(pattern, chunk.lower())
             for match in matches:
+                # Find the start of the sentence containing the match
                 sentence_start = chunk.rfind('.', 0, match.start()) + 1
-                sentence_end = max(
-                    chunk.rfind('.', 0, match.start()),
-                    chunk.rfind('!', 0, match.start()),
-                    chunk.rfind('?', 0, match.start())
-                )
-                if sentence_start == -1:
-                    sentence_start = 0
+                sentence_end = chunk.find('.', match.end())
+                if sentence_end == -1:
+                    sentence_end = len(chunk)
                 sentence = chunk[sentence_start:sentence_end].strip()
                 if sentence:
                     character_contexts[char].append(sentence)
@@ -57,9 +55,10 @@ def classify_roles_hierarchical(aggregated_contexts, hierarchical_roles, classif
         try:
             main_result = classifier(context, main_roles, multi_label=False)
             top_main_role = main_result['labels'][0]
-            sub_roles = hierarchical_roles.get(top_main_role, [])
+            sub_roles = hierarchical_roles.get(top_main_role, {})
             if sub_roles:
-                sub_role_labels = [sub_role.split(":")[0] for sub_role in sub_roles]
+                # Extract sub-role labels from dictionary keys
+                sub_role_labels = list(sub_roles.keys())
                 sub_result = classifier(context, sub_role_labels, multi_label=False)
                 top_sub_role = sub_result['labels'][0] if sub_result['labels'] else "Unknown"
             else:
@@ -82,8 +81,9 @@ def classify_traits(aggregated_contexts, traits, classifier, max_length=1024, th
         if len(context) > max_length:
             context = context[:max_length]
         character_traits[char] = {}
-        for trait_category, trait_list in traits.items():
-            trait_labels = [trait.split(":")[0] for trait in trait_list]
+        for trait_category, trait_dict in traits.items():
+            # Extract trait labels from dictionary keys
+            trait_labels = list(trait_dict.keys())
             try:
                 trait_result = classifier(context, trait_labels, multi_label=True)
                 selected_traits = [
@@ -113,15 +113,41 @@ def load_character_list(file_path):
     return unique_characters
 
 def process_book(book_path, character_path, output_path, roles_config, traits_config):
+    print("Loading book...")
     text = load_book(book_path)
+    
+    print("Splitting into chunks...")
     chunks = split_into_chunks(text)
+    
+    print("Loading characters...")
     characters = load_character_list(character_path)
+    
+    print("Extracting mentions...")
     extracted_contexts = extract_mentions(chunks, characters)
+    
+    print("Aggregating contexts...")
     aggregated_contexts = aggregate_contexts(extracted_contexts)
-    print("Aggregated Contexts:", aggregated_contexts)
-    classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli", device=0 if torch.cuda.is_available() else -1)
+    # print("Aggregated Contexts:", aggregated_contexts)
+    
+    print("Initializing classifier...")
+    classifier = pipeline(
+        "zero-shot-classification", 
+        model="facebook/bart-large-mnli", 
+        device=0 if torch.cuda.is_available() else -1
+    )
+    
+    if torch.cuda.is_available():
+        print("Using GPU for classification.")
+    else:
+        print("Using CPU for classification.")
+    
+    print("Classifying roles...")
     character_roles = classify_roles_hierarchical(aggregated_contexts, roles_config, classifier)
+    
+    print("Classifying traits...")
     character_traits = classify_traits(aggregated_contexts, traits_config, classifier)
+    
+    print("Combining roles and traits...")
     character_info = {
         char: {
             "Roles": character_roles.get(char, {"Main Role": "Unknown", "Sub Role": "Unknown"}),
@@ -129,6 +155,8 @@ def process_book(book_path, character_path, output_path, roles_config, traits_co
         }
         for char in characters
     }
+    
+    print(f"Saving results to {output_path}...")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(character_info, f, indent=4)
     print(f"Character roles saved to {output_path}")
@@ -138,11 +166,12 @@ def main():
     parser.add_argument('--book_path', type=str, required=True, help='Path to the book text file.')
     parser.add_argument('--character_path', type=str, required=True, help='Path to the character JSON file.')
     parser.add_argument('--output_path', type=str, required=True, help='Path to save the output JSON.')
-    parser.add_argument('--roles_config', type=str, default='config/hierarchical_roles.yaml', help='Path to roles YAML config.')
+    parser.add_argument('--roles_config', type=str, default='config/roles.yaml', help='Path to roles YAML config.')
     parser.add_argument('--traits_config', type=str, default='config/traits.yaml', help='Path to traits YAML config.')
     
     args = parser.parse_args()
     
+    print("Loading configuration files...")
     with open(args.roles_config, 'r', encoding='utf-8') as file:
         hierarchical_roles = yaml.safe_load(file)
     
@@ -152,5 +181,4 @@ def main():
     process_book(args.book_path, args.character_path, args.output_path, hierarchical_roles, traits)
 
 if __name__ == "__main__":
-    import torch
     main()
