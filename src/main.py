@@ -113,7 +113,7 @@ def classify_roles_hierarchical(aggregated_contexts, hierarchical_roles, classif
             }
     return character_roles
 
-def classify_traits(aggregated_contexts, traits, classifier, max_length=1024, confidence_threshold=0.3, max_traits=4):
+def classify_traits(aggregated_contexts, traits, classifier, max_length=1024, confidence_threshold=0.5, max_traits=4):
     character_traits = {}
     for char, context in aggregated_contexts.items():
         # Enhanced prompt to focus on character-specific trait classification
