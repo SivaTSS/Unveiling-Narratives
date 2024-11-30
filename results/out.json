@@ -117,8 +117,8 @@
     },
     "James": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Hero"
         },
         "Traits": {
             "Moral": [
@@ -151,8 +151,8 @@
     },
     "Vandemeyer": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Allegorical Character"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -191,8 +191,8 @@
     },
     "Jane": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -221,8 +221,8 @@
     },
     "Brown": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -340,8 +340,8 @@
     },
     "Finn": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -410,8 +410,8 @@
     },
     "Jane Finn": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -479,8 +479,8 @@
     },
     "Albert": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Mentor"
         },
         "Traits": {
             "Moral": [
@@ -520,8 +520,8 @@
     },
     "Conrad": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Hero"
         },
         "Traits": {
             "Moral": [
@@ -558,8 +558,8 @@
     },
     "Beresford": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Antagonist",
+            "Sub Role": "Manipulator"
         },
         "Traits": {
             "Moral": [
@@ -595,8 +595,8 @@
     },
     "Boris": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Allegorical Character"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
@@ -745,8 +745,8 @@
     },
     "Kramenin": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Foil",
+            "Sub Role": "Contrast Character"
         },
         "Traits": {
             "Moral": [
@@ -781,8 +781,8 @@
     },
     "Peel Edgerton": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Hero"
         },
         "Traits": {
             "Moral": [
@@ -815,8 +815,8 @@
     },
     "Rita": {
         "Roles": {
-            "Main Role": "Symbolic Character",
-            "Sub Role": "Personification"
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
         },
         "Traits": {
             "Moral": [
