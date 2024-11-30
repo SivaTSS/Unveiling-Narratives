@@ -8,8 +8,7 @@
             "Moral": [
                 "Generous",
                 "Compassionate",
-                "Principled",
-                "Opportunistic"
+                "Principled"
             ],
             "Personality": [
                 "Friendly",
@@ -18,7 +17,7 @@
                 "Kind"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Supportive",
@@ -46,9 +45,7 @@
         "Traits": {
             "Moral": [
                 "Generous",
-                "Principled",
-                "Compassionate",
-                "Opportunistic"
+                "Principled"
             ],
             "Personality": [
                 "Intelligent",
@@ -57,7 +54,7 @@
                 "Charismatic"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Supportive",
@@ -72,8 +69,7 @@
             ],
             "Behavior": [
                 "Assertive",
-                "Strategic",
-                "Aggressive"
+                "Strategic"
             ]
         }
     },
@@ -95,23 +91,18 @@
                 "Charismatic"
             ],
             "Emotional": [
-                "Anxious",
-                "Angry"
+                "None"
             ],
             "Social": [
                 "Manipulative",
                 "Extroverted"
             ],
             "Motivation": [
-                "Driven",
-                "Ambitious",
-                "Passionate"
+                "Driven"
             ],
             "Behavior": [
                 "Strategic",
-                "Assertive",
-                "Aggressive",
-                "Reckless"
+                "Assertive"
             ]
         }
     },
@@ -122,21 +113,16 @@
         },
         "Traits": {
             "Moral": [
-                "Principled",
-                "Generous"
+                "None"
             ],
             "Personality": [
-                "Intelligent",
-                "Arrogant",
-                "Brave"
+                "Intelligent"
             ],
             "Emotional": [
                 "None"
             ],
             "Social": [
-                "Manipulative",
-                "Extroverted",
-                "Outgoing"
+                "Manipulative"
             ],
             "Motivation": [
                 "Driven",
@@ -144,8 +130,7 @@
             ],
             "Behavior": [
                 "Strategic",
-                "Assertive",
-                "Aggressive"
+                "Assertive"
             ]
         }
     },
@@ -157,9 +142,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Generous",
-                "Opportunistic",
-                "Cruel"
+                "Generous"
             ],
             "Personality": [
                 "Intelligent",
@@ -168,28 +151,51 @@
                 "Kind"
             ],
             "Emotional": [
-                "Anxious",
-                "Angry"
+                "Anxious"
             ],
             "Social": [
                 "Manipulative",
-                "Extroverted",
-                "Supportive"
+                "Extroverted"
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
                 "Aggressive",
-                "Assertive",
-                "Reckless"
+                "Assertive"
             ]
         }
     },
     "Jane": {
+        "Roles": {
+            "Main Role": "Protagonist",
+            "Sub Role": "Leader"
+        },
+        "Traits": {
+            "Moral": [
+                "None"
+            ],
+            "Personality": [
+                "Intelligent"
+            ],
+            "Emotional": [
+                "None"
+            ],
+            "Social": [
+                "Manipulative"
+            ],
+            "Motivation": [
+                "Driven",
+                "Ambitious"
+            ],
+            "Behavior": [
+                "Strategic"
+            ]
+        }
+    },
+    "Brown": {
         "Roles": {
             "Main Role": "Protagonist",
             "Sub Role": "Leader"
@@ -203,45 +209,11 @@
                 "Brave"
             ],
             "Emotional": [
-                "Anxious"
-            ],
-            "Social": [
-                "Manipulative"
-            ],
-            "Motivation": [
-                "Driven",
-                "Ambitious",
-                "Passionate"
-            ],
-            "Behavior": [
-                "Strategic",
-                "Assertive"
-            ]
-        }
-    },
-    "Brown": {
-        "Roles": {
-            "Main Role": "Protagonist",
-            "Sub Role": "Leader"
-        },
-        "Traits": {
-            "Moral": [
-                "Principled",
-                "Opportunistic",
-                "Generous"
-            ],
-            "Personality": [
-                "Intelligent",
-                "Brave",
-                "Arrogant"
-            ],
-            "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Manipulative",
-                "Extroverted",
-                "Outgoing"
+                "Extroverted"
             ],
             "Motivation": [
                 "Driven",
@@ -251,8 +223,7 @@
             "Behavior": [
                 "Strategic",
                 "Assertive",
-                "Aggressive",
-                "Reckless"
+                "Aggressive"
             ]
         }
     },
@@ -304,9 +275,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Generous",
-                "Cruel",
-                "Opportunistic"
+                "Generous"
             ],
             "Personality": [
                 "Intelligent",
@@ -316,15 +285,10 @@
             ],
             "Emotional": [
                 "Stoic",
-                "Anxious",
-                "Angry",
-                "Sad"
+                "Anxious"
             ],
             "Social": [
-                "Manipulative",
-                "Introverted",
-                "Extroverted",
-                "Outgoing"
+                "Manipulative"
             ],
             "Motivation": [
                 "Driven",
@@ -348,11 +312,10 @@
                 "None"
             ],
             "Personality": [
-                "Intelligent",
-                "Brave"
+                "Intelligent"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Manipulative"
@@ -362,8 +325,7 @@
                 "Driven"
             ],
             "Behavior": [
-                "Strategic",
-                "Assertive"
+                "Strategic"
             ]
         }
     },
@@ -382,18 +344,14 @@
             "Personality": [
                 "Intelligent",
                 "Arrogant",
-                "Brave",
-                "Charismatic"
+                "Brave"
             ],
             "Emotional": [
-                "Anxious",
-                "Angry"
+                "None"
             ],
             "Social": [
                 "Manipulative",
-                "Extroverted",
-                "Supportive",
-                "Outgoing"
+                "Extroverted"
             ],
             "Motivation": [
                 "Ambitious",
@@ -403,8 +361,7 @@
             "Behavior": [
                 "Strategic",
                 "Assertive",
-                "Aggressive",
-                "Reckless"
+                "Aggressive"
             ]
         }
     },
@@ -415,12 +372,11 @@
         },
         "Traits": {
             "Moral": [
-                "Principled"
+                "None"
             ],
             "Personality": [
                 "Intelligent",
-                "Brave",
-                "Arrogant"
+                "Brave"
             ],
             "Emotional": [
                 "Anxious"
@@ -430,12 +386,10 @@
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
-                "Strategic",
-                "Assertive"
+                "Strategic"
             ]
         }
     },
@@ -447,8 +401,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Opportunistic",
-                "Honest"
+                "Opportunistic"
             ],
             "Personality": [
                 "Intelligent",
@@ -457,7 +410,7 @@
                 "Arrogant"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Manipulative",
@@ -466,14 +419,12 @@
             ],
             "Motivation": [
                 "Ambitious",
-                "Driven",
-                "Passionate"
+                "Driven"
             ],
             "Behavior": [
                 "Assertive",
                 "Strategic",
-                "Aggressive",
-                "Reckless"
+                "Aggressive"
             ]
         }
     },
@@ -496,8 +447,7 @@
                 "Brave"
             ],
             "Emotional": [
-                "Joyful",
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Supportive",
@@ -507,14 +457,12 @@
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
                 "Assertive",
-                "Aggressive",
-                "Reckless"
+                "Aggressive"
             ]
         }
     },
@@ -526,9 +474,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Just",
-                "Generous",
-                "Honest"
+                "Just"
             ],
             "Personality": [
                 "Intelligent",
@@ -537,17 +483,15 @@
                 "Hostile"
             ],
             "Emotional": [
-                "Angry"
+                "None"
             ],
             "Social": [
                 "Manipulative",
-                "Supportive",
-                "Extroverted"
+                "Supportive"
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
@@ -563,33 +507,25 @@
         },
         "Traits": {
             "Moral": [
-                "Principled",
-                "Opportunistic",
-                "Generous",
-                "Honest"
+                "Principled"
             ],
             "Personality": [
                 "Intelligent",
                 "Kind",
-                "Arrogant",
-                "Brave"
+                "Arrogant"
             ],
             "Emotional": [
                 "None"
             ],
             "Social": [
                 "Manipulative",
-                "Extroverted",
-                "Outgoing"
+                "Extroverted"
             ],
             "Motivation": [
                 "None"
             ],
             "Behavior": [
-                "Assertive",
-                "Strategic",
-                "Aggressive",
-                "Reckless"
+                "Assertive"
             ]
         }
     },
@@ -602,8 +538,7 @@
             "Moral": [
                 "Principled",
                 "Just",
-                "Generous",
-                "Honest"
+                "Generous"
             ],
             "Personality": [
                 "Intelligent",
@@ -622,8 +557,7 @@
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
@@ -639,19 +573,13 @@
         },
         "Traits": {
             "Moral": [
-                "Principled",
-                "Generous",
-                "Honest",
-                "Compassionate"
+                "Principled"
             ],
             "Personality": [
-                "Intelligent",
-                "Brave",
-                "Kind"
+                "Intelligent"
             ],
             "Emotional": [
-                "Anxious",
-                "Sad"
+                "None"
             ],
             "Social": [
                 "Extroverted",
@@ -659,13 +587,11 @@
             ],
             "Motivation": [
                 "Driven",
-                "Ambitious",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
-                "Assertive",
-                "Aggressive"
+                "Assertive"
             ]
         }
     },
@@ -677,8 +603,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Opportunistic",
-                "Generous"
+                "Opportunistic"
             ],
             "Personality": [
                 "Optimistic",
@@ -692,8 +617,7 @@
             "Social": [
                 "Extroverted",
                 "Supportive",
-                "Manipulative",
-                "Outgoing"
+                "Manipulative"
             ],
             "Motivation": [
                 "Passionate",
@@ -702,9 +626,7 @@
             ],
             "Behavior": [
                 "Assertive",
-                "Strategic",
-                "Aggressive",
-                "Reckless"
+                "Strategic"
             ]
         }
     },
@@ -718,18 +640,14 @@
                 "Principled"
             ],
             "Personality": [
-                "Intelligent",
-                "Brave",
-                "Arrogant",
-                "Charismatic"
+                "Intelligent"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
                 "Manipulative",
-                "Extroverted",
-                "Supportive"
+                "Extroverted"
             ],
             "Motivation": [
                 "Driven",
@@ -738,8 +656,7 @@
             ],
             "Behavior": [
                 "Strategic",
-                "Assertive",
-                "Aggressive"
+                "Assertive"
             ]
         }
     },
@@ -750,32 +667,24 @@
         },
         "Traits": {
             "Moral": [
-                "Corrupt"
+                "None"
             ],
             "Personality": [
-                "Intelligent",
-                "Hostile",
-                "Arrogant",
-                "Brave"
+                "Intelligent"
             ],
             "Emotional": [
-                "Anxious"
+                "None"
             ],
             "Social": [
-                "Manipulative",
-                "Reserved",
-                "Extroverted"
+                "Manipulative"
             ],
             "Motivation": [
-                "Ambitious",
-                "Driven",
-                "Passionate"
+                "Ambitious"
             ],
             "Behavior": [
                 "Strategic",
                 "Assertive",
-                "Aggressive",
-                "Reckless"
+                "Aggressive"
             ]
         }
     },
@@ -789,22 +698,17 @@
                 "Principled"
             ],
             "Personality": [
-                "Intelligent",
-                "Arrogant",
-                "Brave",
-                "Charismatic"
+                "Intelligent"
             ],
             "Emotional": [
                 "None"
             ],
             "Social": [
-                "Manipulative",
-                "Extroverted"
+                "Manipulative"
             ],
             "Motivation": [
                 "Ambitious",
-                "Driven",
-                "Passionate"
+                "Driven"
             ],
             "Behavior": [
                 "Strategic",
@@ -821,8 +725,7 @@
         "Traits": {
             "Moral": [
                 "Principled",
-                "Honest",
-                "Opportunistic"
+                "Honest"
             ],
             "Personality": [
                 "Intelligent",
@@ -836,18 +739,15 @@
             "Social": [
                 "Manipulative",
                 "Supportive",
-                "Reserved",
-                "Extroverted"
+                "Reserved"
             ],
             "Motivation": [
-                "Driven",
-                "Ambitious"
+                "Driven"
             ],
             "Behavior": [
                 "Assertive",
                 "Strategic",
-                "Aggressive",
-                "Cautious"
+                "Aggressive"
             ]
         }
     },
@@ -859,29 +759,22 @@
         "Traits": {
             "Moral": [
                 "Dishonest",
-                "Corrupt",
-                "Greedy",
-                "Cruel"
+                "Corrupt"
             ],
             "Personality": [
                 "Intelligent",
                 "Arrogant",
-                "Hostile",
-                "Foolish"
+                "Hostile"
             ],
             "Emotional": [
                 "Anxious",
-                "Stoic",
-                "Sad",
-                "Angry"
+                "Stoic"
             ],
             "Social": [
-                "Manipulative",
-                "Extroverted"
+                "Manipulative"
             ],
             "Motivation": [
-                "Ambitious",
-                "Driven"
+                "Ambitious"
             ],
             "Behavior": [
                 "Reckless",
@@ -897,21 +790,15 @@
         },
         "Traits": {
             "Moral": [
-                "Principled",
-                "Opportunistic",
-                "Honest",
-                "Corrupt"
+                "Principled"
             ],
             "Personality": [
                 "Intelligent",
                 "Brave",
-                "Kind",
-                "Arrogant"
+                "Kind"
             ],
             "Emotional": [
-                "Anxious",
-                "Sad",
-                "Angry"
+                "Anxious"
             ],
             "Social": [
                 "Manipulative",
@@ -921,14 +808,12 @@
             ],
             "Motivation": [
                 "Ambitious",
-                "Driven",
-                "Passionate"
+                "Driven"
             ],
             "Behavior": [
                 "Strategic",
                 "Assertive",
-                "Reckless",
-                "Cautious"
+                "Reckless"
             ]
         }
     }
