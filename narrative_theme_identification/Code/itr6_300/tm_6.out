@@ -1,0 +1,56 @@
+JobId=45035289 JobName=tm_6
+   UserId=lellaom(6188124) GroupId=adv(2490) MCS_label=N/A
+   Priority=20711 Nice=0 Account=general QOS=lellaom
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=01:23:49 TimeLimit=01:30:00 TimeMin=N/A
+   SubmitTime=2024-10-20T21:29:14 EligibleTime=2024-10-20T21:29:14
+   AccrueTime=2024-10-20T21:29:14
+   StartTime=2024-10-20T21:29:20 EndTime=2024-10-20T22:59:20 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-10-20T21:29:20 Scheduler=Main
+   Partition=general-short AllocNode:Sid=dev-amd20-v100:2075223
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nvl-001
+   BatchHost=nvl-001
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=64G,node=1,billing=9961,gres/gpu=1
+   AllocTRES=cpu=1,mem=64G,node=1,billing=9961,gres/gpu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=64G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300/job_script_tm.sh
+   WorkDir=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300
+   Comment=stdout=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300/tm_6.out 
+   StdErr=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300/tm_6.err
+   StdIn=/dev/null
+   StdOut=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300/tm_6.out
+   Power=
+   TresPerJob=gres:gpu:v100:1
+   MailUser=lellaom@msu.edu MailType=INVALID_DEPEND,BEGIN,END,FAIL,REQUEUE,STAGE_OUT
+   
+
+
+SLURM Job ID: 45035289
+WrkDir=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr6_300
+=========================================================================================================
+          JobID |            45035289 |      45035289.batch |     45035289.extern |          45035289.0 |
+        JobName |                tm_6 |               batch |              extern |              python |
+           User |             lellaom |                     |                     |                     |
+       NodeList |             nvl-001 |             nvl-001 |             nvl-001 |             nvl-001 |
+         NNodes |                   1 |                   1 |                   1 |                   1 |
+         NTasks |                     |                   1 |                   1 |                   1 |
+          NCPUS |                   1 |                   1 |                   1 |                   1 |
+      AllocGRES |               gpu=1 |               gpu=1 |               gpu=1 |               gpu=1 |
+         ReqMem |                 64G |                     |                     |                     |
+      Timelimit |            01:30:00 |                     |                     |                     |
+        Elapsed |            01:23:51 |            01:23:51 |            01:23:51 |            01:23:45 |
+       TotalCPU |            01:23:17 |            00:00:03 |            00:00:00 |            01:23:17 |
+     AveCPULoad |            0.993242 |         0.000596303 |                     |            0.994428 |
+         MaxRSS |                     |               7952K |                 96K |           32790092K |
+      MaxVMSize |                     |               8520K |                 96K |           32809588K |
+          Start | 2024-10-20T21:29:20 | 2024-10-20T21:29:20 | 2024-10-20T21:29:20 | 2024-10-20T21:29:24 |
+            End |             Unknown |             Unknown |             Unknown | 2024-10-20T22:53:09 |
+       ExitCode |                 0:0 |                 0:0 |                 0:0 |                 0:0 |
+          State |             RUNNING |             RUNNING |             RUNNING |           COMPLETED |
+=========================================================================================================

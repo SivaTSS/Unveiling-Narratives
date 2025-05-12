@@ -1,0 +1,56 @@
+JobId=45069263 JobName=gl_2
+   UserId=lellaom(6188124) GroupId=adv(2490) MCS_label=N/A
+   Priority=6470 Nice=0 Account=general QOS=lellaom
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:37:02 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2024-10-21T18:05:31 EligibleTime=2024-10-21T18:05:31
+   AccrueTime=2024-10-21T18:05:31
+   StartTime=2024-10-21T18:09:19 EndTime=2024-10-21T19:09:19 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-10-21T18:09:19 Scheduler=Backfill
+   Partition=general-short AllocNode:Sid=dev-amd20-v100:1976471
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nvl-000
+   BatchHost=nvl-000
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=64G,node=1,billing=9961,gres/gpu=1
+   AllocTRES=cpu=1,mem=64G,node=1,billing=9961,gres/gpu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=64G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100/job_script_gl.sh
+   WorkDir=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100
+   Comment=stdout=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100/gl_2.out 
+   StdErr=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100/gl_2.err
+   StdIn=/dev/null
+   StdOut=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100/gl_2.out
+   Power=
+   TresPerJob=gres:gpu:v100:1
+   MailUser=lellaom@msu.edu MailType=INVALID_DEPEND,BEGIN,END,FAIL,REQUEUE,STAGE_OUT
+   
+
+
+SLURM Job ID: 45069263
+WrkDir=/mnt/gs21/scratch/lellaom/narrative_theme_identification/code/itr2_100
+=========================================================================================================
+          JobID |            45069263 |      45069263.batch |     45069263.extern |          45069263.0 |
+        JobName |                gl_2 |               batch |              extern |              python |
+           User |             lellaom |                     |                     |                     |
+       NodeList |             nvl-000 |             nvl-000 |             nvl-000 |             nvl-000 |
+         NNodes |                   1 |                   1 |                   1 |                   1 |
+         NTasks |                     |                   1 |                   1 |                   1 |
+          NCPUS |                   1 |                   1 |                   1 |                   1 |
+      AllocGRES |               gpu=1 |               gpu=1 |               gpu=1 |               gpu=1 |
+         ReqMem |                 64G |                     |                     |                     |
+      Timelimit |            01:00:00 |                     |                     |                     |
+        Elapsed |            00:37:03 |            00:37:03 |            00:37:03 |            00:36:56 |
+       TotalCPU |           36:45.177 |            00:00:03 |            00:00:00 |           36:45.177 |
+     AveCPULoad |            0.991982 |          0.00134953 |                     |            0.995116 |
+         MaxRSS |                     |               7948K |                 96K |            2592972K |
+      MaxVMSize |                     |               8396K |                 96K |            2612672K |
+          Start | 2024-10-21T18:09:19 | 2024-10-21T18:09:19 | 2024-10-21T18:09:19 | 2024-10-21T18:09:25 |
+            End |             Unknown |             Unknown |             Unknown | 2024-10-21T18:46:21 |
+       ExitCode |                 0:0 |                 0:0 |                 0:0 |                 1:0 |
+          State |             RUNNING |             RUNNING |             RUNNING |              FAILED |
+=========================================================================================================
